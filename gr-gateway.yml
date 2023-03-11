@@ -13,12 +13,13 @@ spring:
           uri: http://localhost:9001/
           predicates:
             - Path=/personnes/**
+            - Path=/auth/**
         - id: reportsMS
           uri: http://localhost:9002/
           predicates:
             - Path=/reports/**
 management:
-    endpoints:
-      web:
-        exposure:
-          include: "*"
+  endpoints:
+    web:
+      exposure:
+        include: "*"
