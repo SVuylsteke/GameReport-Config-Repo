@@ -8,16 +8,16 @@ eureka:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: gr-user
-          uri: http://localhost:9001/
-          predicates:
-            - Path=/personnes/**
-            - Path=/auth/**
-        - id: reportsMS
-          uri: http://localhost:9002/
-          predicates:
-            - Path=/reports/**
+    #routes:
+    # - id: gr-user
+    #uri: http://localhost:9001/
+    #predicates:
+    # - Path=/personnes/**
+    #- Path=/auth/**
+    #- id: reportsMS
+    # uri: http://localhost:9002/
+    #predicates:
+    # - Path=/reports/**
 management:
   endpoints:
     web:
