@@ -6,9 +6,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:9102/eureka/
 security:
-  basic:
-    enabled: false
-  #security
   user:
     name: user
     password: mdp
